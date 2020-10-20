@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todoリスト</title>
+  </head>
+  <body>
+    <h1>ToDo リスト</h1>
+
+    <!-- ここからステータス部分 -->
+    <div>
+      <input type="radio" name="status" value="all" id="all" checked />すべて
+      <input type="radio" name="status" value="beingTodo" id="being" />作業中
+      <input type="radio" name="status" value="doneAll" id="done" />完了
+    </div>
+
+    <!-- ここから表示部分 -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>コメント</th>
+          <th>状態</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list"></tbody>
+    </table>
+
+    <!-- 入力部分 -->
+    <h2>新規タスクの追加</h2>
+    <div>
+      <input type="text" id="todo-input" />
+      <button type="button" id="add-button">追加</button>
+    </div>
+
+    <script src="todo_01.js"></script>
+  </body>
+</html>
